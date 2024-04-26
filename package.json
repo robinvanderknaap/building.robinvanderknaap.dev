@@ -1,0 +1,25 @@
+{
+  "name": "building.robinvanderknaap.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "hugo server --disableFastRender --ignoreCache --noHTTPCache --buildDrafts",
+    "hugo": "hugo",
+    "hugo:build": "hugo --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "autoprefixer": "^10.4.19",
+    "hugo-bin": "^0.122.4",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3"
+  }
+}
