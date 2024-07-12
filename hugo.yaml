@@ -1,0 +1,23 @@
+baseURL: https://building.robinvanderknaap.dev/
+languageCode: en-us
+title: building.robinvanderknaap.dev
+module:
+   hugoVersion:
+    extended: true
+    min: "0.112.0"
+   mounts:
+     - source: assets
+       target: assets
+     - source: hugo_stats.json
+       target: assets/watching/hugo_stats.json
+build:
+  writestats: true
+  cachebusters:
+  - source: assets/watching/hugo_stats\.json
+    target: styles\.css
+  - source: (postcss|tailwind)\.config\.js
+    target: css
+  - source: assets/.*\.(js|ts|jsx|tsx)
+    target: js
+  - source: assets/.*\.(.*)$
+    target: $1
