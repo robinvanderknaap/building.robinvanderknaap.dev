@@ -6,6 +6,7 @@ module.exports = {
    './hugo_stats.json',
    './assets/js/*.js'
  ],
+ darkMode: 'selector',
  theme: {
   extend: {
     colors: {

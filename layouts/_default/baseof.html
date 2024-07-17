@@ -11,5 +11,7 @@
     </section>
     {{ $toggleMenu := resources.Get "js/toggle-menu.js" }}
     <script type="text/javascript" src="{{ $toggleMenu.RelPermalink }}" defer></script>
+    {{ $toggleTheme := resources.Get "js/toggle-theme.js" }}
+    <script type="text/javascript" src="{{ $toggleTheme.RelPermalink }}" defer></script>
   </body>
 </html>
