@@ -10,6 +10,9 @@ module:
        target: assets
      - source: hugo_stats.json
        target: assets/watching/hugo_stats.json
+markup:
+    highlight:
+      style: dracula,
 build:
   writestats: true
   cachebusters:
