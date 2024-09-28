@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div>
+  <h1 class="text-3xl sm:text-5xl font-righteous mt-2 sm:mt-8 mb-8">About me</h1>
+  <hr class="mb-8">
+  <div class="flex flex-col items-center md:flex-row md:items-start md:justify-between">
+    <aside class="flex flex-col items-center flex-none w-60">
+      <img src="me.jpg" alt="Robin van der Knaap" class="w-56 rounded-full"/>
+      <h2 class="text-2xl leading-8 tracking-tight font-righteous mt-8">Robin van der Knaap</h2>
+      <div class="mt-5 flex flex-col items-center">
+        <nav class="mb-3 flex space-x-4">
+          {{ partial "socials.html" . }}
+        </nav>
+      </div>
+    </aside>
+    <article class="flex-grow md:pl-8 prose dark:prose-invert lg:prose-xl prose-a:text-accent-500">
+      {{- .Content -}}
+    </article>
+  </div>
+</div>
+{{ end }}

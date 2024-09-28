@@ -6,9 +6,7 @@ module.exports = {
     './hugo_stats.json',
     './assets/js/*.js'
   ],
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  darkMode: 'selector',
   theme: {
     extend: {
       colors: {
@@ -19,5 +17,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
