@@ -9,7 +9,7 @@
 <h1 class="text-3xl lg:text-5xl font-righteous mb-8 text-center break-anywhere">{{ .Page.Title }}</h1>
 <h2 class="text-center lg:text-lg font-mono font-medium text-gray-500 dark:text-gray-400 mb-8">{{ time.Format "January 02, 2006" .Page.Date }}</h2>
 <div>
-  <article class="prose dark:prose-invert lg:prose-xl break-anywhere prose-a:text-accent-500 mx-auto [&_code]:text-wrap">
+  <article class="prose dark:prose-invert lg:prose-xl break-anywhere prose-a:text-accent-500 mx-auto [&_code]:text-wrap" data-pagefind-body>
     {{ .Content }}
   </article>
 </div>
