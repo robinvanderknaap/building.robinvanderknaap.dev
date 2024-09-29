@@ -1,0 +1,3 @@
+Contact: mailto:your@email.com
+Expires: 2025-04-01T10:00:00.000Z
+Preferred-Languages: en, nl

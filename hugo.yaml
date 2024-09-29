@@ -17,6 +17,7 @@ markup:
       startLevel: 2
       endLevel: 6
       ordered: false
+enableRobotsTXT: true
 taxonomies:
   tag: tags
 outputs:
