@@ -13,6 +13,10 @@ module:
 markup:
     highlight:
       style: dracula,
+    tableOfContents:
+      startLevel: 2
+      endLevel: 6
+      ordered: false
 build:
   writestats: true
   cachebusters:
