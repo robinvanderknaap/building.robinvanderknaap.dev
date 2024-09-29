@@ -17,6 +17,18 @@ markup:
       startLevel: 2
       endLevel: 6
       ordered: false
+taxonomies:
+  tag: tags
+outputs:
+  home:
+  - html
+  section:
+  - html
+  - rss
+  taxonomy:
+  - html
+  term:
+  - html
 build:
   writestats: true
   cachebusters:

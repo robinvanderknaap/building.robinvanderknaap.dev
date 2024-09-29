@@ -14,4 +14,7 @@
   {{ end }}
   <link href="{{ $styles.RelPermalink }}" rel="stylesheet">
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+  {{ end }}
 </head>

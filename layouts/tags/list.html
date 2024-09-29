@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1 class="text-5xl font-righteous mt-2 sm:mt-8 mb-8">Tags</h1>
+<hr class="mb-8">
+<ul class="pl-8 list-disc" data-pagefind-ignore>
+  {{ range .Site.Taxonomies.tags }}
+    <li class="">
+      <a href="{{ .Page.RelPermalink }}" class="text-accent-500 font-semibold">
+        {{ .Page.Title }} ({{ .Count }})
+      </a>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}
