@@ -3,6 +3,8 @@ title: 'Lorem Ipsum'
 date: 2024-09-03T16:09:45+02:00
 draft: true
 tags:
+  - lorem
+  - ipsum
 description:
 image: lorem-ipsum-banner.png
 showTOC: true

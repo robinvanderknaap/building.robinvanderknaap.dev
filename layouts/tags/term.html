@@ -1,0 +1,30 @@
+{{ define "main" }}
+<h1 class="text-5xl font-righteous mt-2 sm:mt-8 mb-8">{{ .LinkTitle }}</h1>
+<hr class="mb-8">
+<ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4" data-pagefind-ignore>
+  {{ range .Pages }}
+    <li class="">
+      <a href="{{ .RelPermalink }}">
+        <div class="bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700" style="box-shadow: 0px 0px 40px rgba(29, 58, 83, 0.15);">
+          <div class="p-5 h-56 flex align-middle justify-center rounded-t-lg">
+            {{- $imgParams := .Params.image }}
+            {{- $image := resources.Get "images/shrug.svg" }}
+            {{ if $imgParams }}
+              {{- $image = .Resources.Get $imgParams }}
+            {{ end }}
+            {{ with $image }}
+              <img class="rounded-t-lg" src="{{ .RelPermalink }}">
+            {{ end }}
+          </div>
+          <div class="p-5">
+            <div class="h-56 overflow-clip">
+              <h2 class="mb-2 text-2xl text-gray-900 dark:text-white font-righteous">{{ .LinkTitle }}</h2>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ .Description }}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}
