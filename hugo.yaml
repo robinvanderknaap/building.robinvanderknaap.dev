@@ -40,3 +40,4 @@ outputs:
   - html
   term:
   - html
+enableRobotsTXT: true

@@ -5,7 +5,7 @@ draft: true
 tags:
   - lorem
   - ipsum
-description:
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum magna eu ornare luctus
 image: lorem-ipsum-banner.png
 showTOC: true
 ---
