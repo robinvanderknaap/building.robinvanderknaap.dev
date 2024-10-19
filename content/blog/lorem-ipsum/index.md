@@ -1,7 +1,7 @@
 ---
 title: 'Lorem Ipsum'
 date: 2024-09-03T16:09:45+02:00
-draft: true
+draft: false
 tags:
   - lorem
   - ipsum
