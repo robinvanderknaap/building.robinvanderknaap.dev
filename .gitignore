@@ -1,0 +1,9 @@
+node_modules
+.DS_STORE
+
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+.hugo_build.lock
