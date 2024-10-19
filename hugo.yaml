@@ -21,3 +21,10 @@ build:
     target: js
   - source: assets/.*\.(.*)$
     target: $1
+markup:
+  highlight:
+    style: dracula
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
