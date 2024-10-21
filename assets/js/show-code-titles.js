@@ -18,7 +18,7 @@
       const code = codeElements[i].childNodes[0].textContent;
 
       copyButtonNode.addEventListener("click", () => {
-        navigator.clipboard.writeText(code).then(() => {
+        navigator.clipboard.writeText(code.trim()).then(() => {
           copyButtonNode.innerHTML = `copied`;
           setTimeout(() => {
             copyButtonNode.innerHTML = `copy`;
